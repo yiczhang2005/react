@@ -10,14 +10,14 @@ body {
 
 h1 {
   margin: 2px auto;
-  color: blue;
+  color: rgb(10, 10, 121);
 }
 
 h2 {
   font-size: 17px;
-  color: #ff6700;
-  font-weight: 100;
-  margin: 22px 762px;
+  color: #75a9dc;;
+  font-weight: 700;
+  margin: 22px auto;
   width: 673px;
   margin-top: 0px;
 }

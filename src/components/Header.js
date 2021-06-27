@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header>
             <h1>Daily Task Manager</h1>
-            <h2>--Record only what you do not wanna do (but have to to) and then clear them!</h2>
+            <h2>Record what you don't wanna do (but have to to) and clear them!</h2>
         </header>
     );
 };

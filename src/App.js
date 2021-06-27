@@ -5,6 +5,7 @@ import data from "./static/data.json";
 import Header from "./components/Header";
 import ToDoList from "./components/ToDoList";
 import ToDoForm from './components/ToDoForm';
+import {Col, Row} from 'react-bootstrap';
 
 function App() {
   
@@ -33,8 +34,16 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
-      <ToDoForm addTask={addTask}/>
+      <Row>
+        <Col>
+        <ToDoForm className = "Form" addTask={addTask}/>
+        </Col>
+        <Col>
+        <ToDoList className = "List" toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
+        </Col>
+      </Row>
+      
+      
     </div>
   );
 }

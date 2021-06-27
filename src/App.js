@@ -5,15 +5,15 @@ import data from "./static/data.json";
 import Header from "./components/Header";
 import ToDoList from "./components/ToDoList";
 import ToDoForm from './components/ToDoForm';
-import {Col, Row} from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 
 function App() {
-  
-  const [ toDoList, setToDoList ] = useState(data);
+
+  const [toDoList, setToDoList] = useState(data);
 
   const handleToggle = (id) => {
     let mapped = toDoList.map(task => {
-      return task.id === Number(id) ? { ...task, complete: !task.complete } : { ...task};
+      return task.id === Number(id) ? { ...task, complete: !task.complete } : { ...task };
     });
     setToDoList(mapped);
   }
@@ -25,25 +25,28 @@ function App() {
     setToDoList(filtered);
   }
 
-  const addTask = (userInput ) => {
+  const addTask = (userInput) => {
     let copy = [...toDoList];
     copy = [...copy, { id: toDoList.length + 1, task: userInput, complete: false }];
     setToDoList(copy);
   }
 
   return (
-    <div className="App">
+    <div className="App" >
       <Header />
-      <Row>
-        <Col>
-        <ToDoForm className = "Form" addTask={addTask}/>
+      <Row class="text-center">
+
+        <Col >
+          <ToDoForm className="Form" addTask={addTask} />
         </Col>
-        <Col>
-        <ToDoList className = "List" toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
+
+        <Col >
+          <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter} />
         </Col>
+
       </Row>
-      
-      
+
+
     </div>
   );
 }

@@ -7,6 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+h1 {
+  margin: 2px auto;
+  color: blue;
+}
+
+h2 {
+  font-size: 17px;
+  color: #ff6700;
+  font-weight: 100;
+  margin: 22px 762px;
+  width: 673px;
+  margin-top: 0px;
+}
+
 .App {
   text-align: center;
 }
@@ -19,14 +34,16 @@ code {
 .todo {
   cursor: pointer;
   border: inset;
-  width: 360px;
-  margin: 6px 675px;
+  width: 400px;
+  margin: 5px auto;
   font-weight: 600;
+  text-align: left;
+
 }
 
 
 .strike {
-  background-color: rgb(255, 51, 0);
+  background-color: rgb(96, 150, 49);
   color: white;
   font-weight: 200;
 }
@@ -36,4 +53,10 @@ code {
 }
 .strike {
   text-decoration: line-through;
+}
+
+.col {
+  margin-top: 13px;
+  font: icon;
+  font-weight: 500px;
 }

@@ -7,9 +7,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App {
+  text-align: center;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.todo {
+  cursor: pointer;
+  border: inset;
+  width: 360px;
+  margin: 6px 675px;
+  font-weight: 600;
+}
+
+
+.strike {
+  background-color: rgb(255, 51, 0);
+  color: white;
+  font-weight: 200;
 }
 
 .todo {
